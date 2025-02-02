@@ -894,7 +894,6 @@ section,
 }
 
 
-
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
@@ -909,12 +908,11 @@ section,
   cursor: pointer;
   display: inline-block;
   padding: 0;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   margin: 0 10px;
   line-height: 1;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -948,22 +946,30 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info {
-  opacity: 0;
+  opacity: 1;
+  cursor: pointer;
   position: absolute;
   inset: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0);
   padding: 15px;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
-  padding: 5px 10px;
+  font-size: 24px;
+  padding: 15px;
+  position: absolute;
+  bottom: 0px; /* Adjust as needed */
+  left: 0;
+  margin-bottom: 0;
+  height: 80px;
+  vertical-align: top;
+  right: 0;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--default-color);
   display: inline-block;
-  background-color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 10%);
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -991,7 +997,7 @@ section,
 
 .portfolio .portfolio-content .portfolio-info .preview-link:hover,
 .portfolio .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--accent-color);
+  color: var(--accent-color) 
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
@@ -1001,7 +1007,7 @@ section,
 }
 
 .portfolio .portfolio-content:hover .portfolio-info {
-  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .portfolio .portfolio-content:hover img {
