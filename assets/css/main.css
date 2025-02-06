@@ -41,14 +41,14 @@
 
 .light-background {
   --background-color: #f4fafd;
-  --surface-color: #ffffff;
+  --surface-color: #151f2b;
 }
 
 .dark-background {
-  --background-color: #040b14;
+  --background-color: rgb(5, 5, 40)  ;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #151f2b;
+  --surface-color: rgb(5, 5, 50);
   --contrast-color: #ffffff;
 }
 
@@ -58,6 +58,23 @@
 }
 
 
+.btn-view-project {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-view-project:hover {
+  background-color: rgb(5, 5, 50);
+  color: #ffffff;
+}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -1124,7 +1141,8 @@ section,
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background-color: var(--surface-color);
+  background-color: #2C3E50;
+  color: #ffffff;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
